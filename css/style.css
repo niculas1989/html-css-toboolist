@@ -59,7 +59,7 @@ main {
     margin: 40px 20px;
 }
 
-#new-task {
+.new-task {
     font-style: bold;
     font-size: 25px;
 }
@@ -75,7 +75,14 @@ main {
     border-radius: 50%;
 }
 
-
+.check-rosso {
+    display: inline-block;
+    color: red;
+    border: 1px;
+    border-style: solid;
+    border-color:red;
+    border-radius: 50%;
+}
 .editorial {
     text-align: center;
     display: inline-block;
@@ -86,6 +93,40 @@ main {
     border-radius: 10px;
     font-size: 10px;
 }
+
+.goals {
+    text-align: center;
+    display: inline-block;
+    padding: 4px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9C73E4;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.recruting {
+    text-align: center;
+    display: inline-block;
+    padding: 4px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #63C0A9;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.mobile {
+    text-align: center;
+    display: inline-block;
+    padding: 4px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #F29E34;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
 
  .not-block{
     display: inline-block;
