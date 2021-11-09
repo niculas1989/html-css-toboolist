@@ -1,5 +1,27 @@
+/* informazioni utili per l'intestazione */
+
 .first-head {
     height: 50px;
     width: auto;
-    background-color: #000;
+    /* background-color: #000; */
 }
+
+#logo {
+    display: inline-block;
+}
+
+h1 {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: auto;
+}
+
+
+/* informazioni utili per il main */
+
+
+
+
+/* Utilities */
+
+
