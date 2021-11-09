@@ -57,8 +57,21 @@ main {
 
 #first-section {
     margin: 40px 20px;
+}
+
+#new-task {
     font-style: bold;
     font-size: 25px;
+}
+
+/* Utilities */
+
+.check-verde {
+    color: #5BA555;
+    border: 1px;
+    border-style: solid;
+    border-color: #5BA555;
+    border-radius: 50%;
 }
 
 
