@@ -24,7 +24,7 @@
 h1 {
     display: inline-block;
     /* font-family: Arial, Helvetica, sans-serif; */
-    vertical-align: auto;
+    /* vertical-align: auto; */
     font-size: 40px;
 }
 
@@ -87,8 +87,8 @@ main {
 }
 
 .new-task {
-    font-style: bold;
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* Utilities */
