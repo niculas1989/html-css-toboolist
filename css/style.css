@@ -67,6 +67,7 @@ main {
 /* Utilities */
 
 .check-verde {
+    display: inline-block;
     color: #5BA555;
     border: 1px;
     border-style: solid;
@@ -75,3 +76,17 @@ main {
 }
 
 
+.editorial {
+    text-align: center;
+    display: inline-block;
+    padding: 4px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #46ACEB;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+ .not-block{
+    display: inline-block;
+}
