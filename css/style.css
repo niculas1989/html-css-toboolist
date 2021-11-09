@@ -6,20 +6,30 @@
 /* informazioni utili per l'intestazione */
 
 .first-head {
-    height: 50px;
+    vertical-align: middle;
+    height: 60px;
     width: auto;
-    /* background-color: #000; */
 }
 
 #logo {
     display: inline-block;
+    margin-left:30px;
+    width: 40px;
+    height: 40px;
 }
 
 h1 {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: auto;
+    font-size: 40px;
 }
+
+/* #header-staccato {
+    with: 700px;
+    height: 100px;
+    margin-bottom: 20px;
+} */
 
 
 /* informazioni utili per il main */
@@ -32,9 +42,10 @@ main {
 
 .second-head {
     width: 700px;
-    height: 700px;
-    margin: 20px auto;
+    height: 620px;
+    margin: 40px auto;
     background-color: white;
+    border-radius: 10px;
 
 }
 
