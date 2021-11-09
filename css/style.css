@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+}
+
+
 /* informazioni utili per l'intestazione */
 
 .first-head {
@@ -56,7 +61,15 @@ main {
 }
 
 #first-section {
-    margin: 40px 20px;
+    margin: 40px 20px 10px 20px;
+}
+
+#second-section {
+    margin: 10px 20px;
+}
+
+#third-section {
+    margin: 10px 20px;
 }
 
 .new-task {
@@ -127,7 +140,41 @@ main {
     font-size: 10px;
 }
 
+.website {
+    text-align: center;
+    display: inline-block;
+    padding: 4px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #D864A2;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.sales {
+    text-align: center;
+    display: inline-block;
+    padding: 4px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #B0C925;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.orange-editorial {
+    text-align: center;
+    display: inline-block;
+    padding: 4px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #F29E34;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
 
  .not-block{
     display: inline-block;
+    margin-top: 20px;
 }
