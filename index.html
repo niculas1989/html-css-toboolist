@@ -4,76 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="icon" content="image/png" href="img/logo.png">
-    <meta name="author" content="Nicolas Maranzano">
-    <link rel="icon" href="img/logo.png" type="image/jpg" />
+    <link rel="icon" href="img/Logo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <title>Toboolist</title>
 </head>
-<body>
 
-    <!-- Intestazione della pagina -->
-    <header class=first-head>
-        <img id=logo src="img/Logo.png" alt="Logo Boolean">
-        <h1>Tobolist</h1>
+
+<body>
+    <!-- Intestazione -->
+    <header class="bg-white">
+        <img id="logo" src="img/Logo.png" alt="Logo Boolean">
+        <h1>Toboolist</h1>
     </header>
 
+    <!-- parte centrale -->
     <main>
-
-        <!-- secondo header con "bottoni" -->
-        <header class=second-head>
-
-            <div id=header-staccato>
-                <a id=add-task href="#">Add Task</a>
-                <a id=add-section href="#">Add Section</a>
-            </div>
-
-            <!-- suddivisione delle sezioni del main -->
-            <section id=first-section>
-                <p class=new-task>&darr; New Task</p>
-
-                <p class=not-block><span class=check-verde>&check;</span> Quarterly Newsletter</p>
-                <a class=editorial href="#">Editorial</a>
+        <div class="container bg-white rounded">
+            
+            <!-- sezione Action -->
+            <section id="actions">
+                <button class="btn btn-primary">Add Task</button class="btn btn-disabled"> 
+                <button>Add Section</button>
             </section>
 
-            <section id="second-section">
-                <p class=new-task>&darr; Today</p>
+            <!-- sezione tasks -->
+            <section id="tasks">
+                <ul>
+                    <li>
+                        <h3>&blacktriangledown; New Task</h3>
+                        <ul>
+                            <li class="task-item"><span class="task-status done">&check;</span> Quarterly Newsletter <span class= "pills pills-blue">Editorial</span></li>
+                        </ul>
+                    </li>
+                </ul>
 
-                <p class=not-block><span class=check-verde>&check;</span> Recruting blog post</p>
-                <a class=editorial href="#">Editorial</a><br>
+                <ul>
+                    <li>
+                        <h3>&blacktriangledown; Today</h3>
+                        <ul>
+                            <li class="task-item"><span class="task-status done">&check;</span> Recruting blog post <span class= "pills pills-blue">Q1-goals</span></li>
+                        </ul>
+                        <ul>
+                            <li class="task-item"><span class="task-status done">&check;</span> Mobile app launch <span class= "pills pills-purple">Q1-goals</span></li>
+                        </ul>
+                        <ul>
+                            <li class="task-item"><span class="task-status undone">&cross;</span> Interview John Wick <span class= "pills pills-green">Recruting</span></li>
+                        </ul>
+                        <ul>
+                            <li class="task-item"><span class="task-status done">&check;</span> Summit update to mobile storefronts <span class= "pills pills-orange">Mobile</span></li>
+                        </ul>
+                    </li>
+                </ul>
 
-                <p class=not-block><span class=check-verde>&check;</span> Mobile app launch</p>
-                <a class=goals href="#">Q-1 Goals</a><br>
+                <ul>
+                    <li>
+                        <h3>&blacktriangledown; Upcoming</h3>
+                        <ul>
+                            <li class="task-item"><span class="task-status done">&check;</span> Schedule meeting with Alex DeLarge <span class= "pills pills-green">Recruting</span></li>
+                        </ul>
+                        <ul>
+                            <li class="task-item"><span class="task-status done">&check;</span> Homepage refresh <span class= "pills pills-pink">Website</span></li>
+                        </ul>
+                        <ul>
+                            <li class="task-item"><span class="task-status undone">&cross;</span> Onboard new sales team members <span class= "pills pills-lightgreen">Recruting</span></li>
+                        </ul>
+                        <ul>
+                            <li class="task-item"><span class="task-status done">&check;</span> Review editorial character <span class= "pills pills-orange">Editorial</span></li>
+                        </ul>
+                    </li>
+                </ul>
 
-                <p class=not-block><span class=check-rosso>&cross;</span> Interwiev John Wick</p>
-                <a class=recruting href="#">Recruting</a><br>
-
-                <p class=not-block><span class=check-verde>&check;</span> Summit update to mobilestorefronts</p>
-                <a class=mobile href="#">Mobile</a><br>
             </section>
 
-            <section id="third-section">
-                <p class=new-task>&darr; Upcoming</p>
-
-                <p class=not-block><span class=check-rosso>&cross;</span> Schedule Meeting with Alext</p>
-                <a class=recruting href="#">Recruting</a><br>
-
-                <p class=not-block><span class=check-verde>&check;</span> Homepage refresh</p>
-                <a class=website href="#">Website</a><br>
-
-                <p class=not-block><span class=check-rosso>&cross;</span> Onboard new Sales team members</p>
-                <a class=sales href="#">Sales</a><br>
-
-                <p class=not-block><span class=check-verde>&check;</span> Review editorial character</p>
-                <a class=orange-editorial href="#">Editorial</a><br>
-            </section>
-
-
-        </header>
-
-
+        </div>
 
     </main>
-
 </body>
 </html>

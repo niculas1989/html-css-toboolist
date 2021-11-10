@@ -1,200 +1,146 @@
 * {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: lightslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/* informazioni utili per l'intestazione */
+/* utilities */
 
-.first-head {
-    vertical-align: middle;
-    height: 60px;
-    width: auto;
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+/* Header */
+
+header {
+    height: 70px;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 #logo {
-    display: inline-block;
-    margin-left:30px;
-    margin-top:30px;
-    width: 40px;
-    height: 40px;
-    
+    height: 50px;
+    vertical-align: middle;
 }
 
 h1 {
-    display: inline-block;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* vertical-align: auto; */
-    font-size: 40px;
+    display: inline;
+    line-height: 70px;
+    font-weight: 900;
+    font-size: 38px;
+    vertical-align: middle;
 }
 
-/* #header-staccato {
-    with: 700px;
-    height: 100px;
-    margin-bottom: 20px;
-} */
-
-
-/* informazioni utili per il main */
-
-main {
-    background-color: #F6F8F9;
+h3 {
+    margin-top: 30px;
 }
 
-/* secondo header */
-
-.second-head {
-    width: 700px;
-    height: 620px;
-    margin: 40px auto;
-    background-color: white;
-    border-radius: 10px;
-
+ul {
+    list-style-type: none;
 }
 
-#add-task {
-    display: inline-block;
+/* sezione centrale */
+
+#actions {
+    padding: 10px 30px;
+    border-bottom: 3px solid lightslategray;
+}
+
+/* buttons */
+
+.btn {
+    border-radius: 5px;
     padding: 5px 10px;
-    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
     color: #fff;
     background-color: dodgerblue;
-    border-radius: 10px;
-    margin: 15px 5px 15px 15px;
+    border-color: dodgerblue;
 }
 
-#add-section {
+.btn-disabled {
+    color: lightgray;
+    background-color: white;
+    border-color: currentColor;
+}
+
+#tasks {
+    padding: 20px;
+}
+
+/* tasks */
+
+.task-status {
     display: inline-block;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #BFBFBF;
-    border: 1px;
-    border-style: solid;
-    border-color: #BFBFBF;
-    border-radius: 10px;
-    margin: 15px 2px;
-}
-
-#first-section {
-    margin: 40px 20px 10px 20px;
-}
-
-#second-section {
-    margin: 10px 20px;
-}
-
-#third-section {
-    margin: 10px 20px;
-}
-
-.new-task {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-/* Utilities */
-
-.check-verde {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    color: #5BA555;
-    border: 1px;
-    border-style: solid;
-    border-color: #5BA555;
+    width: 15px;
+    height: 15px;
+    border: 1px solid transparent;
     border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
 }
 
-.check-rosso {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    text-align: center;
+.done {
+    color: green;
+    border-color: currentColor;
+}
+
+.undone {
     color: red;
-    border: 1px;
-    border-style: solid;
-    border-color:red;
-    border-radius: 50%;
+    border-color: currentColor;
 }
-.editorial {
-    text-align: center;
-    display: inline-block;
-    padding: 4px 7px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #46ACEB;
-    border-radius: 10px;
+
+.task-item {
+    margin-top: 30px;
+}
+
+/* pills */
+
+.pills {
+    padding: 5px 10px;
     font-size: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+    color: white;
 }
 
-.goals {
-    text-align: center;
-    display: inline-block;
-    padding: 4px 7px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #9C73E4;
-    border-radius: 10px;
-    font-size: 10px;
+.pills-purple {
+    background-color: purple;
 }
 
-.recruting {
-    text-align: center;
-    display: inline-block;
-    padding: 4px 7px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #63C0A9;
-    border-radius: 10px;
-    font-size: 10px;
+.pills-green {
+    background-color: green;
 }
 
-.mobile {
-    text-align: center;
-    display: inline-block;
-    padding: 4px 7px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #F29E34;
-    border-radius: 10px;
-    font-size: 10px;
+.pills-orange {
+    background-color: orange;
 }
 
-.website {
-    text-align: center;
-    display: inline-block;
-    padding: 4px 7px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #D864A2;
-    border-radius: 10px;
-    font-size: 10px;
+.pills-lightgreen {
+    background-color: lightgreen;
 }
 
-.sales {
-    text-align: center;
-    display: inline-block;
-    padding: 4px 7px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #B0C925;
-    border-radius: 10px;
-    font-size: 10px;
+.pills-pink {
+    background-color: pink;
 }
 
-.orange-editorial {
-    text-align: center;
-    display: inline-block;
-    padding: 4px 7px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #F29E34;
-    border-radius: 10px;
-    font-size: 10px;
-}
-
-
- .not-block{
-    display: inline-block;
-    margin-top: 20px;
+.pills-blue {
+    background-color: #45ABEA;
 }
